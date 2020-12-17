@@ -62,8 +62,6 @@ function generatePassword() {
   var password = ""
   for (var i = 0; i < pswdLength; i++) {
     var random = Math.floor(Math.random() * availableChars.length);
-    console.log(random);
-    console.log(availableChars[random]);
     password += availableChars[random];
   }
   // returns the new password string to the function, then the new password appears on 
